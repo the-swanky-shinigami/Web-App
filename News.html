@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News Website</title>
+	<style>
+		/* Basic styles for the website */
+		body {
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+}
+
+header {
+  background-color: #333;
+  padding: 20px 40px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #715d69;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 30px auto;
+	max-width: 1200px;
+}
+
+article {
+	flex-basis: calc(33.33% - 20px);
+	margin-bottom: 40px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s;
+}
+
+article:hover {
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+article img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+article h2 {
+	font-size: 1.5rem;
+	margin: 20px;
+}
+
+article p {
+	font-size: 1rem;
+	margin: 0 20px 20px;
+}
+
+article a {
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 20px;
+	margin: 20px;
+	text-decoration: none;
+	transition: background-color 0.3s;
+}
+
+article a:hover {
+	background-color: #f2f2f2;
+	color: #333;
+}
+
+section.featured {
+	background-color: #f2f2f2;
+	padding: 40px 20px;
+	text-align: center;
+}
+
+section.featured h2 {
+	font-size: 2rem;
+	margin-bottom: 40px;
+}
+
+section.featured article {
+	display: inline-block;
+	max-width: 800px;
+}
+
+section.featured img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+
+section.featured h3 {
+	font-size: 1.5rem;
+	margin: 20px;
+}
+
+section.featured p {
+	font-size: 1.2rem;
+	margin: 0 20px 20px;
+}
+
+section.featured a {
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 20px;
+	margin: 20px;
+	text-decoration: none;
+	transition: background-color 0.3s;
+}
+
+section.featured a:hover {
+	background-color: #f2f2f2;
+	color: #333;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	article {
+		flex-basis: calc(100% - 20px);
+	}
+
+	section.recent li {
+		flex-basis: calc(100% - 20px);
+	}
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.search-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.search-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1 style="color: #fff;">News Website</h>
+    </header>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Politics</a></li>
+			<li><a href="#">Business</a></li>
+			<li><a href="#">Technology</a></li>
+			<li><a href="#">Entertainment</a></li>
+			<li><a href="#">Sports</a></li>
+			<li><a href="#">Opinion</a></li>
+		</ul>
+		<br>
+		<div class="search-container">
+			<input type="text" placeholder="Search...">
+			<button type="submit">Search</button>
+		</div>
+	</nav>
+    <main>
+        <article>
+            <img src="Article1.jpg" alt="Article 1 image">
+            <h2>PayPal enables transfer of digital currencies to external wallets</h2>
+            <p>The move comes after nearly two years since PayPal enabled users to buy and sell crypto on its platform.</p>
+            <a href="Article1.html">Read more</a>
+        </article>
+        <article>
+            <img src="article2.jpg" alt="Article 2 image">
+            <h2>Italian Parliament Approves 26% Crypto-Gains Tax in 2023 Budget</h2>
+            <p>Prime Minister Giorgia Meloni's new bill also includes an incentive for those declaring crypto for tax purposes.</p>
+            <a href="Article2.html">Read more</a>
+        </article>
+        <article>
+            <img src="article3.jpg" alt="Article 3 image">
+            <h2>Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC</h2>
+            <p>Nasdaq-listed Microstrategy Inc. announced Wednesday that it has purchased more bitcoin for its corporate treasury.</p>
+            <a href="Article3.html">Read more</a>
+        </article>
+        <article>
+            <img src="article4.jpg" alt="Article 4 image">
+            <h2>Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022</h2>
+            <p>2022 has been a rough and tough year for investors, traders, cryptocurrency businesses, and miners in general.</p>
+            <a href="Article4.html">Read more</a>
+        </article>
+        <article>
+            <img src="article5.jpg" alt="Article 5 image">
+            <h2>Mango Markets Exploiter Eisenberg Arrested in Puerto Rico</h2>
+            <p>The investor drained $110 million in cryptocurrencies from the platform.</p>
+            <a href="Article5.html">Read more</a>
+        </article>
+    </main>
+    <section class="featured">
+        <h2>Featured Article</h2>
+        <article>
+            <img src="featured.jpg" alt="Featured article image">
+            <h3>Featured Article Title</h3>
+            <p>Summary of featured article.</p>
+            <a href="#">Read more</a>
+        </article>
+    </section>
+</body>
+</html>
